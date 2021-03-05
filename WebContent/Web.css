@@ -1,0 +1,197 @@
+@charset "ISO-8859-1";
+
+* {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: azure;
+}
+
+.header {
+	background-color: black;
+	text-align: center;
+}
+
+.headlist p {
+	display: inline;
+	color: white;
+	font-size: 40px;
+	margin-right: 300px;
+}
+
+.headlist {
+	overflow: hidden;
+}
+
+.headitemlist {
+	float: left;
+}
+
+.amenu {
+	display: block;
+	padding: 17px;
+	color: white;
+	text-decoration: none;
+}
+
+.amenu:hover {
+	background-color: yellow;
+	color: red;
+}
+
+nav {
+	background-color: #001933;
+	text-align: center;
+}
+
+.navlist {
+	overflow: hidden;
+}
+
+.navitemlist {
+	display: inline-block;
+}
+
+.navmenu {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 17px;
+}
+
+.navmenu:hover {
+	color: black;
+	background-color: yellow;
+	animation: html 0.7s;
+}
+
+.card-container {
+	text-align: center;
+}
+
+.card {
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 300px;
+	margin: 17px;
+	text-align: center;
+	font-family: arial;
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card button:hover {
+	opacity: 0.5;
+}
+
+footer {
+	background-color: #333;
+	text-align: center;
+	width: 100%;
+}
+
+footer p {
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+}
+/*form{
+	padding-bottom:20px;
+}*/
+.field{
+	/*padding-left:45%;*/
+	background-color: #DDD;
+	margin: 110px auto;
+	/*margin-bottom:0px;*/
+    padding: 20px;
+    width: 25%;
+    border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+}
+.form{
+	background-color:#DDD;
+	height:600px;
+}
+.form div{
+	text-align:center;
+	padding:10px;
+	background-color:tomato;
+}
+.form label,input[type="submit"]{
+	/*display:block;*/
+	/*padding-top: 10px;
+	padding-bottom:10px;*/
+	display: block;
+    margin-bottom: 10px;
+}
+.form input[type="email"],input[type="password"],input[type="text"],textarea{
+	/*padding-top: 10px;
+	padding-bottom:10px;*/
+	margin-bottom: 10px;
+	display:block;
+	width: 300px;
+    padding: 8px;
+}
+.form input[type="submit"]{
+	display:block;
+	padding:10px;
+	color: black;
+	background-color:yellow;
+	margin:10px 0px;
+	transform-style: flat;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: red;
+	
+}
+
+
+@keyframes html { 
+	0%{
+	width: 100%;
+	background-color: tomato;
+}
+
+}
+@media screen and (max-width:800px) {
+	.headlist p {
+		display: block;
+		margin-right: 0;
+	}
+	.headitemlist {
+		float: none;
+		background-color: #333;
+	}
+	.headlist {
+		display: block;
+		padding-left: 0;
+	}
+	.amenu {
+		color: white;
+	}
+	.navlist {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}
